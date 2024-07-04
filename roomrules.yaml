@@ -1,0 +1,6 @@
+---
+room:
+  name:
+    enum:
+      func: getUrlList
+      args: [https://dummyjson.com/test/]
