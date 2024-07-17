@@ -1,6 +1,6 @@
 import yaml
 
-# Original Python rules for comparison (using lists instead of tuples)
+# Original Python rules for comparison
 rules = {
     "True": {
         "choiceTest": {"enum": ["apple", "banana", 55]},
@@ -90,18 +90,15 @@ door[feature="Dropbolt"]:
   fireEgressDoor: False
 """
 
-# Load YAML data
 loaded_rules = yaml.safe_load(yaml_data)
 
-# Print the loaded YAML data to see what it looks like as a Python dictionary
 print("Loaded YAML Data:\n", loaded_rules)
 
-# Print the original rules for comparison
 print("Original Python Rules:\n", rules)
 
 # Compare loaded YAML data with original Python dictionary
 comparison_result = loaded_rules == rules
-print("Comparison Result:", comparison_result)  # This should print True if the conversion is correct
+print("Comparison Result:", comparison_result)
 
 # Detailed comparison
 for key in rules.keys():
