@@ -1,4 +1,4 @@
-True:
+Hat:
   choiceTest:
     enum:
       - apple
@@ -15,10 +15,12 @@ True:
 
 room:
   name:
+    type: string
+    max_words: 3
     choices:
       func: getUrlList
       args:
-        - https://dummyjson.com/test/
+        - http://sephbin.pythonanywhere.com/roomNames
 
 wall:
   fireRating:

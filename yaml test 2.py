@@ -2,7 +2,7 @@ import yaml
 
 # Original Python rules for comparison
 rules = {
-    "True": {
+    "Hat": {
         "choiceTest": {"enum": ["apple", "banana", 55]},
         "arrayTest": {
             "maxItems": 3,
@@ -15,7 +15,7 @@ rules = {
         "name": {
             "choices": {
                 "func": "getUrlList",
-                "args": ["https://dummyjson.com/test/"]
+                "args": ["http://sephbin.pythonanywhere.com/roomNames"]
             }
         }
     },
@@ -43,7 +43,7 @@ rules = {
 
 # YAML data as a string
 yaml_data = """
-True:
+Hat:
   choiceTest:
     enum:
       - apple
@@ -63,7 +63,7 @@ room:
     choices:
       func: getUrlList
       args:
-        - https://dummyjson.com/test/
+        - http://sephbin.pythonanywhere.com/roomNames
 
 wall:
   fireRating:
